@@ -6,7 +6,7 @@ function evenNumbers(num){
     }
 };
 
-console.log(evenNumbers(10))
+// console.log(evenNumbers(10))
 
 
 function myRevert(myarr){
@@ -17,8 +17,8 @@ function myRevert(myarr){
     return array;
 };
 
-const arrayDato = [ "uno", "dos", "tres"];
-const arrayRevert = evenNumbers(arrayDato);
+// const arrayDato = [ "uno", "dos", "tres"];
+// const arrayRevert = evenNumbers(arrayDato);
 
 function isRainbow(colors:string[]): void{
     let arcoiris=['rojo','azul', 'verde','amarillo', 'naranja', 'violeta', 'indigo'];
@@ -32,8 +32,8 @@ function isRainbow(colors:string[]): void{
     });
 };
 
-const colores = ['rojo', 'azul'];
-isRainbow(colores);
+// const colores = ['rojo', 'azul'];
+// isRainbow(colores);
 
 export function add(myWords:string[]): number{
     let sumaCaract = 0;
@@ -44,11 +44,19 @@ export function add(myWords:string[]): number{
     return sumaCaract;
 };
 
-const palabras =['retos', 'de', 'bucles', 'for'];
-console.log(add(palabras));
+// const palabras =['retos', 'de', 'bucles', 'for'];
+// console.log(add(palabras));
 
 
-
+export function isEven(number:number) {
+    if (number % 2 === 0) {
+        console.log('El numero es par');
+    }
+    else {
+        console.log('El numero es impar');
+    }
+}
+ isEven(2);
 
 
 

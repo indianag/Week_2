@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = exports.add = void 0;
 function evenNumbers(num) {
     for (var i = 0; i <= num; i++) {
         if (i % 2 !== 0) {
@@ -6,7 +9,7 @@ function evenNumbers(num) {
     }
 }
 ;
-console.log(evenNumbers(10));
+// console.log(evenNumbers(10))
 function myRevert(myarr) {
     var array = [];
     for (var i = myarr.length - 1; (i >= 0); i--) {
@@ -15,8 +18,8 @@ function myRevert(myarr) {
     return array;
 }
 ;
-var arrayDato = ["uno", "dos", "tres"];
-var arrayRevert = evenNumbers(arrayDato);
+// const arrayDato = [ "uno", "dos", "tres"];
+// const arrayRevert = evenNumbers(arrayDato);
 function isRainbow(colors) {
     var arcoiris = ['rojo', 'azul', 'verde', 'amarillo', 'naranja', 'violeta', 'indigo'];
     colors.forEach(function (color) {
@@ -29,8 +32,8 @@ function isRainbow(colors) {
     });
 }
 ;
-var colores = ['rojo', 'azul'];
-isRainbow(colores);
+// const colores = ['rojo', 'azul'];
+// isRainbow(colores);
 function add(myWords) {
     var sumaCaract = 0;
     myWords.forEach(function (caracter) {
@@ -38,5 +41,17 @@ function add(myWords) {
     });
     return sumaCaract;
 }
-var palabras = ['retos', 'de', 'bucles', 'for'];
-console.log(add(palabras));
+exports.add = add;
+;
+// const palabras =['retos', 'de', 'bucles', 'for'];
+// console.log(add(palabras));
+function isEven(number) {
+    if (number % 2 === 0) {
+        console.log('El numero es par');
+    }
+    else {
+        console.log('El numero es impar');
+    }
+}
+exports.isEven = isEven;
+// console.log(isEven(2));

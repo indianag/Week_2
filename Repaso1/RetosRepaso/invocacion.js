@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var buclesFor_1 = require("./buclesFor");
+var buclesFor_2 = require("./buclesFor");
+var arr1 = ['Casa', 'Coche', 'Ciudad', 'Cesta'];
+var arr2 = ['Barco', 'Baca', 'Bicicleta', 'Balon', 'Bisiesto', 'Brasil'];
+var arr3 = ['Venezuela', 'Veneno', 'Voltaje'];
+var sumaArr1 = (0, buclesFor_2.add)(arr1);
+console.log("adioss" + sumaArr1);
+var resultado = (0, buclesFor_1.isEven)(sumaArr1);
+// console.log("Holaaaaa" + resultado);
