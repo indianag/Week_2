@@ -8,3 +8,4 @@ let persona2 = new Person("Indiana", 1991, "indimar.w1@gmail.com");
 let contacto = new contacts();
 contacto.people=[persona,persona1,persona2];
 contacto.printCalendar();
+ 
