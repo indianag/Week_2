@@ -50,6 +50,16 @@ var Point = /** @class */ (function () {
         }
         return cuadrante;
     };
+    Point.prototype.calculateNearest = function (point) {
+        var punto = [];
+        for (var _i = 0, point_1 = point; _i < point_1.length; _i++) {
+            var distancia = point_1[_i];
+            if (this.calculateDistance(distancia) < distancia.distanceToOrigin()) {
+                punto.push(distancia);
+            }
+        }
+        return punto;
+    };
     return Point;
 }());
 exports.Point = Point;
