@@ -50,15 +50,15 @@ public calculateQuadrant():number{
     }
         return cuadrante;
 }
-public calculateNearest(point:Point[]){
-    let punto:Point[]= [];
-   for(let distancia of point){
-        if(this.calculateDistance(distancia) < distancia.distanceToOrigin()){
-            punto.push(distancia);
+// public calculateNearest(point:Point[]):Point{
+//     let punto:Point[]= [];
+//    for(let distancia of point){
+//         if(this.calculateDistance(distancia) < distancia.distanceToOrigin()){
+//             punto.push(distancia);
             
-        }
-    } 
-   return punto 
-} 
+//         }
+//     } 
+//    return punto 
+// } 
 };
 
