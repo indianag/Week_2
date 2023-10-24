@@ -38,6 +38,7 @@ function zodiac(day, month) {
     }
     return signoZodiaco;
 }
+;
 console.log(zodiac(13, 5));
 function continent(country) {
     var continentes = {
@@ -56,6 +57,7 @@ function continent(country) {
     }
     return miContinente;
 }
+;
 console.log(continent("España"));
 function isEven(number) {
     if (number % 2 === 0) {
@@ -65,4 +67,6 @@ function isEven(number) {
         console.log('El numero es impar');
     }
 }
-console.log(isEven(2));
+;
+isEven(2);
+module.exports = { isEven: isEven };

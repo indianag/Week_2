@@ -39,6 +39,10 @@ var Mobile = /** @class */ (function () {
     Mobile.prototype.getPrice = function () {
         return this.price;
     };
+    Mobile.prototype.toStringMobile = function () {
+        var newToStringMovil = "The characteristics of the mobile name are:\n            Name:  ".concat(this.name, "\n            Trademark: ").concat(this.trademark, " \n            Model:  ").concat(this.model, "\n            Color: ").concat(this.color, " \n            Price:  ").concat(this.price);
+        return newToStringMovil;
+    };
     return Mobile;
 }());
 exports.Mobile = Mobile;

@@ -28,6 +28,8 @@ public distanceToOrigin():number{
     return distancia
 }
 public calculateDistance(anotherPoint:Point): number{
+    console.log(anotherPoint);
+    
     const distancia = Math.sqrt(((this.x - anotherPoint.x)** 2) + ((this.y - anotherPoint.y)** 2));
     return distancia;
 }
@@ -50,15 +52,18 @@ public calculateQuadrant():number{
     }
         return cuadrante;
 }
-// public calculateNearest(point:Point[]):Point{
-//     let punto:Point[]= [];
-//    for(let distancia of point){
-//         if(this.calculateDistance(distancia) < distancia.distanceToOrigin()){
-//             punto.push(distancia);
-            
-//         }
-//     } 
-//    return punto 
-// } 
+public calculateNearest(point: Point[]): Point {
+    let distMinima: number = 250000;
+    let puntoMinimo: Point = point[0];
+    for (let i = 0; i < point.length; i++) {
+        let distanciActual = this.calculateDistance(point[i]);
+        if (distanciActual < distMinima) {
+            distMinima = distanciActual
+        }
+        puntoMinimo = point[i]
+    }
+    return puntoMinimo
+}
 };
 
+ 

@@ -13,3 +13,4 @@ console.log(myPoint.toString());
 console.log(myPoint.distanceToOrigin());
 console.log(myPoint.calculateDistance(anotherPoint));
 console.log(myPoint.calculateQuadrant());
+console.log(myPoint.calculateNearest([]));

@@ -1,4 +1,4 @@
-function hasEven(myNums:number[]): boolean{
+function hasEven(myNums: number[]): boolean{
     let i = 0;
     while(i < myNums.length){
         if(myNums[i] % 2 === 0){

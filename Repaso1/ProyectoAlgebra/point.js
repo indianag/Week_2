@@ -28,6 +28,7 @@ var Point = /** @class */ (function () {
         return distancia;
     };
     Point.prototype.calculateDistance = function (anotherPoint) {
+        console.log(anotherPoint);
         var distancia = Math.sqrt((Math.pow((this.x - anotherPoint.x), 2)) + (Math.pow((this.y - anotherPoint.y), 2)));
         return distancia;
     };
@@ -51,14 +52,16 @@ var Point = /** @class */ (function () {
         return cuadrante;
     };
     Point.prototype.calculateNearest = function (point) {
-        var punto = [];
-        for (var _i = 0, point_1 = point; _i < point_1.length; _i++) {
-            var distancia = point_1[_i];
-            if (this.calculateDistance(distancia) < distancia.distanceToOrigin()) {
-                punto.push(distancia);
+        var distMinima = 250000;
+        var puntoMinimo = point[0];
+        for (var i = 0; i < point.length; i++) {
+            var distanciActual = this.calculateDistance(point[i]);
+            if (distanciActual < distMinima) {
+                distMinima = distanciActual;
             }
+            puntoMinimo = point[i];
         }
-        return punto;
+        return puntoMinimo;
     };
     return Point;
 }());

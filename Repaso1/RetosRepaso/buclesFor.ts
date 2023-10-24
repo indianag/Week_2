@@ -6,7 +6,7 @@ function evenNumbers(num){
     }
 };
 
-console.log(evenNumbers(10))
+evenNumbers(10);
 
 
 function myRevert(myarr){
@@ -18,12 +18,13 @@ function myRevert(myarr){
 };
 
 const arrayDato = [ "uno", "dos", "tres"];
-const arrayRevert = evenNumbers(arrayDato);
+const arrayRevert = myRevert(arrayDato);
+console.log(arrayRevert);
 
 function isRainbow(colors:string[]): void{
-    let arcoiris=['rojo','azul', 'verde','amarillo', 'naranja', 'violeta', 'indigo'];
-    colors.forEach((color) => {
-        if(arcoiris.indexOf(color)){
+    let arcoiris:string[] = ['rojo','azul', 'verde','amarillo', 'naranja', 'violeta', 'indigo'];
+    colores.forEach((color) => {
+        if(arcoiris.includes(color)){
             console.log('El color esta en el arcoiris');
         } 
         else {
@@ -32,10 +33,11 @@ function isRainbow(colors:string[]): void{
     });
 };
 
-const colores = ['rojo', 'azul'];
+
+const colores = ['dorado', 'azul'];
 isRainbow(colores);
 
-export function add(myWords:string[]): number{
+function add(myWords:string[]): number{
     let sumaCaract = 0;
 
     myWords.forEach((caracter) => {
@@ -48,7 +50,7 @@ const palabras =['retos', 'de', 'bucles', 'for'];
 console.log(add(palabras));
 
 
-
+module.exports = {add}
 
 
 

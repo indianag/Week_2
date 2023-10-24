@@ -21,9 +21,6 @@ export class MobileCollection{
     public getTotalPrice(): number{
         return this.totalPrice
     }
-    // public setTotalPriceCalculation(newTotal:number[]): void {
-    //     this.totalPriceCalculation = newTotal
-    // }
     public getTotalPriceCalculation(): number{
         let suma:number= 0;
         for( let i = 0; i <this.mobiles.length; i++){
@@ -31,13 +28,15 @@ export class MobileCollection{
         }
         return suma;
     }
-    public printCollection(){
-        let newLocal = `This is all my mobiles:  The characteristics of the mobile name are:`;
-        for (let mobile  of this.mobiles){
-            console.log(mobile)
+    public printCollection():string{
+        let misMobiles = ``;
+        for (let i = 0; i< this.mobiles.length; i++){
+            misMobiles = misMobiles + 
+            `This is all my mobiles: 
+            ${this.mobiles[i].toStringMobile}
+            ......
+            Price overall: totalPrice`;
         }
+        return misMobiles;
     }
-    /////NO PUDE CONCATENAR LETRAS//////
-
-    
 };

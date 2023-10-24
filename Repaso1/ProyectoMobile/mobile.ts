@@ -42,5 +42,17 @@ export class Mobile{
     public getPrice(): number{
         return this.price
     }
+    public toStringMobile(): string{
+        let newToStringMovil =
+           `The characteristics of the mobile name are:
+            Name:  ${this.name}
+            Trademark: ${this.trademark} 
+            Model:  ${this.model}
+            Color: ${this.color} 
+            Price:  ${this.price}`
+        return newToStringMovil;
+    }
 };
- 
+  
+
+

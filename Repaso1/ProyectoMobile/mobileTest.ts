@@ -22,26 +22,10 @@ console.log(myMobile.getPrice());
 myMobile.setPrice(1200);
 console.log(myMobile.getPrice());
 
-/// RETO 2 ////
-
-class MiMetodo{
-    public mobiles: Mobile[]
-    
-    constructor(){
-        this.mobiles = [];
-    }     
-    printcaracMobiles(){
-        for (let propiedades of this.mobiles){
-            console.log(propiedades);
-        }
-    }
-};
 
 let myMobile1 = new Mobile("Indiana", "iphone", "14 ProMax", "violeta", 1800);
 let myMobile2 = new Mobile("Indiana", "iphone", "14 ProMax", "violeta", 1800);
 let myMobile3 = new Mobile("Indiana", "iphone", "14 ProMax", "violeta", 1800);
  
-let mobile = new MiMetodo();
-mobile.mobiles = [myMobile1, myMobile2, myMobile3];
-mobile.printcaracMobiles();
 
+console.log(myMobile.toStringMobile());

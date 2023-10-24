@@ -18,9 +18,6 @@ var MobileCollection = /** @class */ (function () {
     MobileCollection.prototype.getTotalPrice = function () {
         return this.totalPrice;
     };
-    // public setTotalPriceCalculation(newTotal:number[]): void {
-    //     this.totalPriceCalculation = newTotal
-    // }
     MobileCollection.prototype.getTotalPriceCalculation = function () {
         var suma = 0;
         for (var i = 0; i < this.mobiles.length; i++) {
@@ -29,11 +26,12 @@ var MobileCollection = /** @class */ (function () {
         return suma;
     };
     MobileCollection.prototype.printCollection = function () {
-        var newLocal = "This is all my mobiles:  The characteristics of the mobile name are:";
-        for (var _i = 0, _a = this.mobiles; _i < _a.length; _i++) {
-            var mobile = _a[_i];
-            console.log(mobile);
+        var misMobiles = "";
+        for (var i = 0; i < this.mobiles.length; i++) {
+            misMobiles = misMobiles +
+                "This is all my mobiles: \n            ".concat(this.mobiles[i].toStringMobile, "\n            ......\n            Price overall: totalPrice");
         }
+        return misMobiles;
     };
     return MobileCollection;
 }());

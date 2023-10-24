@@ -8,15 +8,6 @@ let myMobile4 = new Mobile("Indiana", "iphone", "14 ProMax", "violeta", 1800);
 
 let arr = [myMobile1, myMobile2, myMobile3, myMobile4];
 
-export class MyCollection{
-    public colecciones: MobileCollection[];
-
-    constructor(){
-        this.colecciones = [];
-    }
-};
-
-
 let coleccion = new MobileCollection(arr);
 
 // console.log(coleccion.getMobiles());
@@ -25,12 +16,10 @@ let coleccion = new MobileCollection(arr);
 
 // console.log(coleccion.getTotalPrice());
 // coleccion.setTotalPrice(1);
-console.log(myMobile1.getPrice());
+// console.log(myMobile1.getPrice());
 
 // console.log(coleccion.getTotalPriceCalculation());
-// coleccion.setTotalPriceCalculation([]);
- console.log(coleccion.getTotalPriceCalculation());
- /// FALTA PROBAR EL METODO GETPRICE ///
+
 
 console.log(coleccion.printCollection());
 

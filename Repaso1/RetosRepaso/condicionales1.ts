@@ -1,4 +1,4 @@
-function zodiac(day:number, month:number):string{
+function zodiac(day:number, month:number): string{
     let signoZodiaco: string = " ";
     if ((day >= 20 && month == 1) || (day <= 18 && month == 2)){
         signoZodiaco = "Acuario";
@@ -68,4 +68,6 @@ function isEven(number:number):void{
         console.log('El numero es impar')
     }
 };
-console.log(isEven(2));
+isEven(2);
+
+module.exports ={isEven}

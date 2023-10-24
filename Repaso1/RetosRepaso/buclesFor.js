@@ -6,7 +6,7 @@ function evenNumbers(num) {
     }
 }
 ;
-console.log(evenNumbers(10));
+evenNumbers(10);
 function myRevert(myarr) {
     var array = [];
     for (var i = myarr.length - 1; (i >= 0); i--) {
@@ -16,11 +16,12 @@ function myRevert(myarr) {
 }
 ;
 var arrayDato = ["uno", "dos", "tres"];
-var arrayRevert = evenNumbers(arrayDato);
+var arrayRevert = myRevert(arrayDato);
+console.log(arrayRevert);
 function isRainbow(colors) {
     var arcoiris = ['rojo', 'azul', 'verde', 'amarillo', 'naranja', 'violeta', 'indigo'];
-    colors.forEach(function (color) {
-        if (arcoiris.indexOf(color)) {
+    colores.forEach(function (color) {
+        if (arcoiris.includes(color)) {
             console.log('El color esta en el arcoiris');
         }
         else {
@@ -29,7 +30,7 @@ function isRainbow(colors) {
     });
 }
 ;
-var colores = ['rojo', 'azul'];
+var colores = ['dorado', 'azul'];
 isRainbow(colores);
 function add(myWords) {
     var sumaCaract = 0;
@@ -38,5 +39,7 @@ function add(myWords) {
     });
     return sumaCaract;
 }
+;
 var palabras = ['retos', 'de', 'bucles', 'for'];
 console.log(add(palabras));
+module.exports = { add: add };
